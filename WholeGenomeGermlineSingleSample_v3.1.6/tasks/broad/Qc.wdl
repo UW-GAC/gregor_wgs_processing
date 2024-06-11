@@ -584,7 +584,7 @@ task CalculateReadGroupChecksum {
     Int preemptible_tries
   }
 
-  Int disk_size = ceil(size(input_bam, "GiB")) + 40
+  Int disk_size = ceil(size(input_bam, "GiB")) + 100
 
   command {
     java -Xms1000m -Xmx3500m -jar /usr/picard/picard.jar \
