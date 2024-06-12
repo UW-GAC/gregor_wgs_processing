@@ -1,8 +1,19 @@
+# The first line refers to the version 1.2 of the .dockstore.yml schema
 version: 1.2
+
+# An array of workflows. Each element corresponds to a workflow on Dockstore.
 workflows:
-  - subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/pipelines/broad/dna_seq/germline/single_sample/wgs/WholeGenomeGermlineSingleSample.wdl
-    authors:
-      - name: Marsha Wheeler
-        email: mmwheel@uw.edu
-    topic: WholeGenomeGermlineSingleSample
+
+# The optional workflow name for a workflow, which may only consist of alphanumerics
+  # and internal underscores and hyphens, but no spaces or other characters. Names may not exceed 256 characters.
+  # If using a .dockstore.yml with multiple workflows, this field is required
+  # to uniquely identify workflows in the repository.
+  #
+  # It should be noted that having the name come first is an arbitrary decision.
+  # You could use subclass instead, for instance. Provided arrays are not broken
+  # up, the order of fields within a .dockstore.yml is not important.
+  - name: WholeGenomeGermlineSingleSample
+  # The descriptor language used for the workflow. CWL, WDL, NFL (Nextflow), or GALAXY.
+  # This cannot be changed once the workflow is registered.
+    subclass: WDL
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/pipelines/broad/dna_seq/germline/single_sample/wgs/WholeGenomeGermlineSingleSample.wdl
