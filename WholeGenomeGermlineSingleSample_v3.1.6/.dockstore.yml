@@ -2,65 +2,65 @@ version: 1.2
     workflows:
     - name: WholeGenomeGermlineSingleSample
         - subclass: WDL
-          primaryDescriptorPath: /pipelines/broad/dna_seq/germline/single_sample/wgs/WholeGenomeGermlineSingleSample.wdl  # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/pipelines/broad/dna_seq/germline/single_sample/wgs/WholeGenomeGermlineSingleSample.wdl  # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: VariantCalling
         - subclass: WDL
-          primaryDescriptorPath: /pipelines/broad/dna_seq/germline/variant_calling/VariantCalling.wdl  # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/pipelines/broad/dna_seq/germline/variant_calling/VariantCalling.wdl  # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: DNASeqStructs
         - subclass: WDL
-          primaryDescriptorPath: /structs/dna_seq/DNASeqStructs.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/structs/dna_seq/DNASeqStructs.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: AggregatedBamQC
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/AggregatedBamQC.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/AggregatedBamQC.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: Alignment
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/Alignment.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/Alignment.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: BamProcessing
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/BamProcessing.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/BamProcessing.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: BamProcessing
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/BamProcessing.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/BamProcessing.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: BamToCram
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/BamToCram.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/BamToCram.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: DragenTasks
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/DragenTasks.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/DragenTasks.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: DragmapAlignment
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/DragmapAlignment.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/DragmapAlignment.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: DragmapAlignment
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/DragmapAlignment.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/DragmapAlignment.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: GermlineVariantDiscovery
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/GermlineVariantDiscovery.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/GermlineVariantDiscovery.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: Qc
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/Qc.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/Qc.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: SplitLargeReadGroup
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/SplitLargeReadGroup.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/SplitLargeReadGroup.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: UnmappedBamToAlignedBam
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/UnmappedBamToAlignedBam.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/UnmappedBamToAlignedBam.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
     - name: Utilities
         - subclass: WDL
-          primaryDescriptorPath: /tasks/broad/Utilities.wdl # absolute path
+          primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/Utilities.wdl # absolute path
           testParameterFiles: /empty.json  # absolute path
