@@ -27,34 +27,34 @@ workflows:
     primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/structs/dna_seq/DNASeqStructs.wdl
   - name: AggregatedBamQC
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/AggregatedBamQC.wdl
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/AggregatedBamQC.wdl
   - name: Alignment.wdl
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/Alignment.wdl
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/Alignment.wdl
   - name: BamProcessing
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/BamProcessing.wdl
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/BamProcessing.wdl
   - name: BamToCram
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/BamToCram.wdl 
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/BamToCram.wdl 
   - name: DragenTasks
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/DragenTasks.wdl
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/DragenTasks.wdl
   - name: DragmapAlignment
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/DragmapAlignment.wdl
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/DragmapAlignment.wdl
   - name: GermlineVariantDiscovery
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/GermlineVariantDiscovery.wdl 
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/GermlineVariantDiscovery.wdl 
   - name: Qc
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/Qc.wdl
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/Qc.wdl
   - name: SplitLargeReadGroup
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/SplitLargeReadGroup.wdl
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/SplitLargeReadGroup.wdl
   - name: UnmappedBamToAlignedBam
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/UnmappedBamToAlignedBam.wdl
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/UnmappedBamToAlignedBam.wdl
   - name: Utilities
     subclass: WDL
-    primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/Utilities.wdl
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/Utilities.wdl
