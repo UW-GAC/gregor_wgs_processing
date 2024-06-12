@@ -2,8 +2,6 @@ version: 1.2
 workflows:
   - subclass: WDL
     primaryDescriptorPath: https://github.com/UW-GAC/gregor_wgs_processing/blob/main/WholeGenomeGermlineSingleSample_v3.1.6/pipelines/broad/dna_seq/germline/single_sample/wgs/WholeGenomeGermlineSingleSample.wdl
-    testParameterFiles: /empty.json
-    readMePath: /README.md
     authors:
       - name: Marsha Wheeler
         email: mmwheel@uw.edu
