@@ -21,3 +21,7 @@ workflows:
   - name: VariantCalling
     subclass: WDL
     primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/pipelines/broad/dna_seq/germline/variant_calling/VariantCalling.wdl
+
+  - name: VariantCalling
+    subclass: WDL
+    primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/structs/dna_seq/DNASeqStructs.wdl
