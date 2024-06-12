@@ -28,7 +28,7 @@ workflows:
   - name: AggregatedBamQC
     subclass: WDL
     primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/AggregatedBamQC.wdl
-  - name: Alignment.wdl
+  - name: Alignment
     subclass: WDL
     primaryDescriptorPath: /WholeGenomeGermlineSingleSample_v3.1.6/tasks/broad/Alignment.wdl
   - name: BamProcessing
