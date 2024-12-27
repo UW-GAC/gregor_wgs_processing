@@ -457,7 +457,7 @@ task CollectWgsMetrics {
   }
 
   Float ref_size = size(ref_fasta, "GiB") + size(ref_fasta_index, "GiB")
-  Int disk_size = ceil(size(input_bam, "GiB") + ref_size) + 20
+  Int disk_size = ceil(size(input_bam, "GiB") + ref_size) + 128
 
   command {
     java -Xms2000m -Xmx2500m -jar /usr/picard/picard.jar \
