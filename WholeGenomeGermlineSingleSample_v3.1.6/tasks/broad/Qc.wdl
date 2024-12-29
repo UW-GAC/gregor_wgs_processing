@@ -460,7 +460,7 @@ task CollectWgsMetrics {
   Int disk_size = ceil(size(input_bam, "GiB") + ref_size) + 128
 
   command {
-    java -Xms2000m -Xmx2500m -jar /usr/picard/picard.jar \
+    java -Xms4000m -Xmx4500m -jar /usr/picard/picard.jar \
       CollectWgsMetrics \
       INPUT=~{input_bam} \
       VALIDATION_STRINGENCY=SILENT \
