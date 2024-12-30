@@ -444,43 +444,43 @@ task ValidateSamFile {
   }
 }
 
-task CollectWgsMetrics {
-  input {
-    File input_bam
-    File input_bam_index
-    String metrics_filename
-    File wgs_coverage_interval_list
-    File ref_fasta
-    File ref_fasta_index
-    Int read_length = 250
-    Int preemptible_tries
-  }
+#task CollectWgsMetrics {
+#  input {
+#    File input_bam
+#    File input_bam_index
+#    String metrics_filename
+#    File wgs_coverage_interval_list
+#    File ref_fasta
+#    File ref_fasta_index
+#    Int read_length = 250
+#    Int preemptible_tries
+#  }
 
-  Float ref_size = size(ref_fasta, "GiB") + size(ref_fasta_index, "GiB")
-  Int disk_size = ceil(size(input_bam, "GiB") + ref_size) + 128
+#  Float ref_size = size(ref_fasta, "GiB") + size(ref_fasta_index, "GiB")
+#  Int disk_size = ceil(size(input_bam, "GiB") + ref_size) + 128
 
-  command {
-    java -Xms4000m -Xmx4500m -jar /usr/picard/picard.jar \
-      CollectWgsMetrics \
-      INPUT=~{input_bam} \
-      VALIDATION_STRINGENCY=SILENT \
-      REFERENCE_SEQUENCE=~{ref_fasta} \
-      INCLUDE_BQ_HISTOGRAM=true \
-      INTERVALS=~{wgs_coverage_interval_list} \
-      OUTPUT=~{metrics_filename} \
-      USE_FAST_ALGORITHM=true \
-      READ_LENGTH=~{read_length}
-  }
-  runtime {
-    docker: "us.gcr.io/broad-gotc-prod/picard-cloud:2.26.10"
-    preemptible: preemptible_tries
-    memory: "3000 MiB"
-    disks: "local-disk " + disk_size + " HDD"
-  }
-  output {
-    File metrics = "~{metrics_filename}"
-  }
-}
+#  command {
+#    java -Xms4000m -Xmx4500m -jar /usr/picard/picard.jar \
+#      CollectWgsMetrics \
+#      INPUT=~{input_bam} \
+#      VALIDATION_STRINGENCY=SILENT \
+#      REFERENCE_SEQUENCE=~{ref_fasta} \
+#      INCLUDE_BQ_HISTOGRAM=true \
+#      INTERVALS=~{wgs_coverage_interval_list} \
+#      OUTPUT=~{metrics_filename} \
+#      USE_FAST_ALGORITHM=true \
+#      READ_LENGTH=~{read_length}
+#  }
+#  runtime {
+#    docker: "us.gcr.io/broad-gotc-prod/picard-cloud:2.26.10"
+#    preemptible: preemptible_tries
+#    memory: "3000 MiB"
+#    disks: "local-disk " + disk_size + " HDD"
+#  }
+#  output {
+#    File metrics = "~{metrics_filename}"
+#  }
+#}
 
 # Collect raw WGS metrics (commonly used QC thresholds)
 task CollectRawWgsMetrics {
